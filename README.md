@@ -111,7 +111,7 @@ rospy.spin()
    roslaunch assignment_2_2023 assignment1.launch
   
 2. Run action_client_node.py in a Separate Terminal:
-Explanation: action_client_node.py is run separately to isolate its output, avoiding interference with other nodes' outputs. This separation provides a cleaner console view, especially when running multiple nodes simultaneously.
+ This node is run separately to isolate its output, avoiding interference with other nodes' outputs. This separation provides a cleaner console view, especially when running multiple nodes simultaneously.
    ```bash
    rosrun assignment_2_2023 action_client_node.py
 ## Retrieve Robot Information:
