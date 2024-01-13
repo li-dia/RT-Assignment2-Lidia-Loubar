@@ -29,7 +29,7 @@ This package contains three ROS nodes that collectively enable a robot to receiv
 - The node subscribes to the `/odom` topic to receive Odometry messages, extracts relevant information, and publishes a `CustomMessage` on the `/custom_topic` topic.
 - Progress feedback is displayed during goal execution.
 
-  #### Pseudo Code with Code Snippets:
+  #### Pseudo Code:
 
 ```python
 # Pseudo code for action_client_node.py
@@ -114,4 +114,13 @@ rospy.spin()
 Explanation: action_client_node.py is run separately to isolate its output, avoiding interference with other nodes' outputs. This separation provides a cleaner console view, especially when running multiple nodes simultaneously.
    ```bash
    rosrun <your_package_name> action_client_node.py
+## Retrieve Robot Information:
+- Use the `/get_robot_pos_vel` service provided by `robot_pos_vel_service_node.py` to get information about the robot's position and velocity.
+```bash
+rosservice call /get_robot_pos_vel
+```
+Use the  `/get_last_target_coordinates` service provided by `last_target_service.py` to retrieve the last target coordinates.
 
+```bash
+rosservice call /get_last_target_coordinates
+```
