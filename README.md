@@ -16,7 +16,7 @@ This package contains three ROS nodes that collectively enable a robot to receiv
 2. Clone the Repository:
 
    ```bash
-   git clone
+   git clone https://github.com/li-dia/RT-Assignment2-Lidia-Loubar.git
 
 
 
