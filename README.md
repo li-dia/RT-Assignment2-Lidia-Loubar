@@ -113,7 +113,7 @@ rospy.spin()
 2. Run action_client_node.py in a Separate Terminal:
 Explanation: action_client_node.py is run separately to isolate its output, avoiding interference with other nodes' outputs. This separation provides a cleaner console view, especially when running multiple nodes simultaneously.
    ```bash
-   rosrun <your_package_name> action_client_node.py
+   rosrun assignment_2_2023 action_client_node.py
 ## Retrieve Robot Information:
 - Use the `/get_robot_pos_vel` service provided by `robot_pos_vel_service_node.py` to get information about the robot's position and velocity.
 ```bash
